@@ -1,0 +1,157 @@
+@media (max-width:1553px) {
+    .container .menu-block {
+        height: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 1500px) {
+    .wrapper .row-info .col-info .reg-info{
+        width: 220px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .main-block {
+        height: 80%;
+    }
+
+    .main-block .container .menu-block{
+        height: calc(100% - 120px);
+    }
+
+    .wrapper .row-info .col-info .reg-info{
+        width: 220px;
+    }
+
+    .wrapper .row-info {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .wrapper .form-student.enableStudent {
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .wrapper .form-worker.enableWorker {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .wrapper .row-info {
+        width: 40%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .wrapper .row-info:last-child { 
+        justify-content: space-around;
+        width: 100%;
+    }
+    .wrapper .row-info:last-child .col-info:last-child { 
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .wrapper .row-info:last-child .col-info:last-child span { 
+        font-size:14px;
+    }
+}
+
+@media (max-width: 924px) {
+    .wrapper .form-student.enableStudent {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper .form-worker.enableWorker {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wrapper .row-info {
+        width: 90%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .wrapper .row-info:last-child { 
+        justify-content: center;
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .logo-text {
+        display: none;
+    }
+    .header .logo img {
+        display: none;
+    }
+    .header .hamburger {
+        display: block;
+    }
+
+    .main-block {
+        position: relative;
+    }
+    .container {
+        position: absolute;
+        left: 0;
+        z-index: 2;
+        height: 100%
+    }
+    .wrapper {
+        position: relative;
+        z-index: 1;
+        margin-left: 10px;
+        margin-right: 10px;
+        filter: blur(10px);
+    }
+
+    .wrapper .form-student.enableStudent {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .wrapper .form-worker.enableWorker {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .wrapper .row-info {
+        width: 45%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .wrapper .row-info:last-child { 
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+@media (max-height: 650px) {
+    .container .menu-block {
+        height: 100%;
+    }
+}
+
+@media (max-width: 590px) {
+    .header {
+        padding-left: 20px;
+    }
+    .wrapper .form-student.enableStudent {
+        flex-direction: column;
+    }
+    .wrapper .form-worker.enableWorker {
+        flex-direction: column;
+    }
+    .wrapper .row-info {
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .wrapper .row-info:last-child { 
+        justify-content: space-around;
+    }
+}

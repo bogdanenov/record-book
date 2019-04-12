@@ -1,0 +1,367 @@
+.wrapper .btn-toggle {
+    display: flex;
+    width: 100%;
+}
+
+.wrapper .btn-toggle .btn-box {
+    width: 50%;
+    height: 43px;
+    background-color: #efefef;
+    border: 2px solid #4381ac;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .3s all ease;
+}
+
+.wrapper .btn-toggle .btn-box:first-child {
+    background: linear-gradient(to left, #4381ac 50%, #efefef 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: none;
+}
+
+.wrapper .btn-toggle .btn-box:last-child {
+    background: linear-gradient(to right, #4381ac 50%, #efefef 50%);
+    background-size: 201% 100%;
+    background-position: right bottom;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: none;
+}
+
+.wrapper .btn-toggle .btn-box.isSelect:first-child {
+    background-position: right bottom;
+    color: #efefef;
+}
+
+.wrapper .btn-toggle .btn-box.isSelect:last-child {
+    background-position: left bottom;
+    color: #efefef;
+}
+
+.wrapper .btn-toggle .btn-box:hover {
+    color: #979797;
+}
+
+.wrapper .btn-toggle .btn-box:active {
+	outline: none;
+}
+
+
+.wrapper .form-student {
+    display: none;
+    width: 100%;
+    border: 2px solid #4381ac;
+    margin-top: 10px;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+.wrapper .form-worker {
+    display: none;
+    width: 100%;
+    border: 2px solid #4381ac;
+    margin-top: 10px;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+
+.wrapper .form-student.enableStudent {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .form-worker.enableWorker {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 32px;
+    margin-right: 32px;
+
+}
+
+.row-info .col-info {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wrapper .row-info .col-info .reg-info {
+    margin-top: 11px;
+    width: 320px;
+    height: 38px;
+    border: 1px solid #4381ac;
+    transition: .5s all ease;
+}
+
+.wrapper .row-info .col-info .reg-info::placeholder {
+	font-family: "Proxima Nova";
+	font-size: 16px;
+	opacity: .8;
+	transition: .5s ease all; 
+}
+
+.wrapper .row-info .col-info .reg-info:focus::placeholder {
+	color: transparent;
+}
+
+.wrapper .row-info .col-info input{
+    font-size: 16px;
+    padding-left: 42px;
+    border-radius: 3px;
+}
+
+.wrapper .row-info .col-info .reg-info.sel input {
+    padding-left: 0px;
+}
+
+.wrapper .row-info .col-info input:focus{
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+
+.wrapper .row-info .col-info span{
+    margin-top: 15px;
+    color: #000;
+    font-size: 16px;
+}
+
+.wrapper .row-info .col-info .input-box {
+    position: relative;
+}
+
+.wrapper .row-info .col-info .input-box.curse-info {
+    margin-bottom: 35px;
+}
+
+.wrapper .row-info .col-info .input-box i{
+    position: absolute;
+    top: 41%;
+    padding-left: 13px;
+	font-size: 20px;
+	color: #676767;
+}
+
+#pass-st {
+    padding-right: 42px;
+}
+
+#pass, #pass-slash{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    padding-right: 13px;
+	font-size: 16px;
+    color: #676767;
+    cursor: pointer;
+}
+
+#pass-slash.del-slash {
+    display: none;
+}
+
+#pass.del-slash {
+    display: none;
+}
+
+#pass-work {
+    padding-right: 42px;
+}
+
+#passW, #passW-slash{
+    position: absolute;
+    top: 45%;
+    right: 0;
+    padding-right: 13px;
+	font-size: 16px;
+    color: #676767;
+    cursor: pointer;
+}
+
+#passW-slash.del-slash {
+    display: none;
+}
+
+#passW.del-slash {
+    display: none;
+}
+
+.wrapper .btn-option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.wrapper .btn-option input {
+    width: 201px;
+    height: 44px;
+    background-color: #efefef;
+    border: 2px solid #4381ac;
+    border-radius: 3px;
+    color: #08658c;
+    font-size: 16px;
+    transition: .3s all ease;
+}
+
+.wrapper .btn-option input:hover {
+    color: #efefef;
+    background-color: #4381ac;
+}
+
+.wrapper .btn-option input:focus {
+    outline: none;
+}
+
+.wrapper .btn-option .btn-form {
+    display: none;
+}
+
+.wrapper .btn-option .btn-form.form-active {
+    display: block;
+}
+
+
+
+
+/* Style for other element */
+
+select {
+	width: inherit;
+    margin-top: 11px;
+    padding: 3px;
+    padding-left: 14px;
+    font-size: 14px;
+    height: 38px;
+    border-radius: 3px;
+    border: 1px solid #4381ac;
+	cursor: pointer;
+    background:  white;
+    transition: .2s all ease;
+}
+
+select:hover {
+	color: #4381ac;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+
+select:focus {
+	outline: none;
+}
+
+select option {
+	background-color: white;
+	color: gray;
+	width: 310px;
+	padding: 10px 15px;
+	height: 20px;
+	cursor: pointer;
+}
+
+select option:hover {
+	padding-left: 25px;
+	width: 270px;
+}
+
+
+option[disabled] {
+    display: none;
+}
+
+textarea {
+    resize: none;
+}
+
+#note.reg-info {
+    border-radius: 3px;
+    height: 147px;
+    padding-left: 0;
+}
+
+#note:focus {
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+
+#note-worker.reg-info {
+    border-radius: 3px;
+    height: 147px;
+    padding: 0;
+}
+
+#note-worker:focus {
+    outline: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+
+.input-container {
+    max-width: 320px;
+}
+input[type='file'] {
+    display: none;
+}
+.browse-btn {
+    background: #efefef;
+    color: #000;
+    min-height: 38px;
+    border: none;
+    border-radius: 3px;
+}
+.browse-btn:hover {
+    background: #4381ac;
+    color: #efefef;
+}
+
+.input-container-worker {
+    max-width: 320px;
+}
+input[type='file'] {
+    display: none;
+}
+.browse-btn-worker {
+    background: #efefef;
+    color: #000;
+    min-height: 38px;
+    border: none;
+    border-radius: 3px;
+}
+.browse-btn-worker:hover {
+    background: #4381ac;
+    color: #efefef;
+}
+#file-text-worker {
+    display: block;
+    font-size: 12px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#comment-worker {
+    display: block;
+    float:right;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+#file-text {
+    display: block;
+    font-size: 12px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#comment {
+    display: block;
+    float:right;
+    padding-top: 20px;
+    font-size: 14px;
+}
